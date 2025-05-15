@@ -1,7 +1,36 @@
-body {
-  font-family: "Inter", sans-serif;
+:root {
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Macondo", "cursive";
+  --primary-color: #3a2620 /*dark brown */;
+  --secondary-color: #aa9581;
+  --highlight-color: #415a82;
+  --light-hightlight-color: #7a9fc2;
 }
 
-.display-1 {
-  font-family: "Macondo", sans-serif;
+/* general styles */
+body {
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+}
+
+.sub-heading-color {
+  color: var(--highlight-color);
+}
+
+/* grid visualistion for css testing */
+
+.container,
+.row {
+  border: 2px solid black;
+}
+
+.col-12 {
+  border: 2px solid white;
+  background-color: lightgrey;
 }

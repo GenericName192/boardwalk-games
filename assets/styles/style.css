@@ -65,6 +65,13 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* games */
+
+#new-games .card,
+#fav-games .card {
+  border: none;
+}
+
 /* grid visualistion for css testing */
 
 /* .container,
@@ -85,6 +92,9 @@ h2 {
   /* makes all the cards the same height */
   #services .card-body {
     min-height: 191px;
+  }
+  #games .card-body {
+    min-height: 232px;
   }
 }
 

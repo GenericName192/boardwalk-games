@@ -17,7 +17,15 @@ h2,
 h3 {
   color: var(--primary-color);
   font-family: var(--secondary-font);
+}
+
+h1,
+h2 {
   text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 2rem;
 }
 
 .sub-heading-color {
@@ -45,6 +53,18 @@ h3 {
   font-family: var(--secondary-font);
 }
 
+/* services */
+
+#services .card-footer {
+  font-weight: bold;
+  color: var(--highlight-color);
+  background-color: transparent;
+}
+
+#services .card {
+  margin-bottom: 1.5rem;
+}
+
 /* grid visualistion for css testing */
 
 /* .container,
@@ -56,3 +76,38 @@ h3 {
   border: 2px solid white;
   background-color: lightgrey;
 } */
+
+/* media quries */
+
+/* medium devices (tablets, 768px and up) */
+
+@media screen and (min-width: 768px) {
+  /* makes all the cards the same height */
+  #services .card-body {
+    min-height: 191px;
+  }
+}
+
+/* large devices 992px */
+@media screen and (min-width: 992px) {
+  /* makes all the cards the same height */
+  #services .card-body {
+    min-height: auto;
+  }
+}
+
+/* extra large devices 1200px */
+@media screen and (min-width: 1200px) {
+  /* makes all the cards the same height */
+  #services .card-body {
+    min-height: 220px;
+  }
+}
+
+/* extra extra large devices 1400px */
+@media screen and (min-width: 1400px) {
+  /* makes all the cards the same height */
+  #services .card-body {
+    min-height: 195px;
+  }
+}

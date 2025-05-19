@@ -10,6 +10,8 @@
 /* Gobal styles */
 body {
   font-family: var(--primary-font);
+  /* to make the navbar isnt covering the top of the content */
+  padding-top: 58px;
 }
 
 h1,
